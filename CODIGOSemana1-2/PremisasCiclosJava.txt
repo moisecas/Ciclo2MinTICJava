@@ -1,0 +1,27 @@
+
+
+
+
+EJERCICIO #1:
+
+Crear una aplicación que reciba dos números por teclado (del usuario), su programa debe imprimir todos los números
+impares que se encuentren dentro del rango (el primer número es el inicio y el segundo el fin), cabe resaltar que se deben
+incluir los números ingresados por el usuario en la validación.
+
+2 7
+3
+5
+7
+ 
+EJERCICIO #2:
+
+Crear un programa que sume los números ingresados por un usuario hasta que se ingrese un número negativo o cero, tenga en cuenta
+que la condición puede no llegar a cumplirse, este comportamiento es normal, lo anterior quiere decir que si el usuario en el
+primer intento ingreso cero o un número negativo entonces finaliza la aplicación.
+
+1 - 1
+2 - 3
+50 - 53
+1 - 54
+...
+-x || 0

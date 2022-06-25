@@ -1,0 +1,27 @@
+
+
+
+
+EJERCICIO #1:
+
+Haga un programa que le pida a un policia ingresar la velocidad de un vehículo, si la velocidad es menor o igual a 30
+imprimir "velocidad adecuada", si la velocidad esta entre el rango de 31 y 50 imprimir "velocidad riesgosa", si la velocidad
+es mayor a 50 imprimir "exceso de velocidad".
+
+EJERCICIO #2:
+
+Hacer una aplicación para elegir una operación matematica, primero, imprimir un mensaje de bienvenida, después, solicitar los dos
+números a operar, por último, solicitar la operación a realizar, una vez ingresados los datos, imprimir en el siguiente formato:
+NUMERO 1 (OPERACION) NUMERO 2 = RESULTADO.
+
+1
+1
++
+
+1 + 1 = 2
+
+2
+3
+*
+
+2 * 3 = 6

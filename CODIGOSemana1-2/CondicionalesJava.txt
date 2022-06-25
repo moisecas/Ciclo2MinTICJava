@@ -1,0 +1,73 @@
+Condicionales Java:
+
+El flujo de ejecución en Java es lineal por lo que se va ejecutando línea a línea en el orden en el que se va leyendo 
+cada instrucción, por lo que las sentencias para controlar el flujo de ejecución son la base de la lógica 
+ya que permiten ejecutar partes del código con base a condiciones (if, if-else y switch) según la necesidad del programador.
+
+CONDICIONAL IF:
+* La estructura condicional más simple en Java es el if, se evalúa una condición y en caso de que se cumpla se ejecuta el
+contenido entre las llaves {}, en caso contrario de que no se cumpla la condición, java omite las líneas de código que estén
+dentro de la sentencia IF.
+
+- SINTAXIS:
+
+//Se define una variable para controlar la condición del if.
+int valor = 10;
+
+//Palabra reservada if, parentesís obligatorios, condición a evaluar, apertura y cierre de llaves.
+if (valor >= 5) {
+    //Dentro de las llaves van las instrucciones que se quieran ejecutar.
+    System.out.println("El número que ingreso es mayor o igual que 5");
+}
+
+CONDICIONAL IF-ELSE:
+
+* Con el if solo se puede ejecutar un fragmento de código o no, pero en el caso de que no se cumpla la condición 
+no se hace nada (sigue el flujo normal de ejecución) por lo que si se requiere que se ejecute otra cosa cuando no se cumpla 
+la condición solo con el if se tendría que hacer otra condición inversa o adicional provocando que se tenga que 
+comprobar la condición 2 veces mientras que si usamos el else solo necesitamos hacer la comprobación una sola vez.
+
+- SINTAXIS:
+
+//Se define una variable para controlar la condición del if-else.
+int valor = 1;
+
+//Palabra reservada if, parentesís obligatorios, condición a evaluar, apertura y cierre de llaves.
+if (valor >= 5) {
+    //Dentro de las llaves van las instrucciones que se quieran ejecutar.
+    System.out.println("El número que ingreso es mayor o igual que 5");
+} else if(condicion) {
+    
+}
+//Palabra reservada else.
+else {
+    //Dentro de las llaves van las instrucciones que se quieran ejecutar.
+    System.out.println("El número que ingreso es menor que 5");
+}
+
+CONDICIONAL SWITCH:
+* Con el switch se puede hacer un control del tipo if-else (anidado) más estructurado pero en realidad no exactamente 
+igual puesto que con el switch lo que se hace es definir un conjunto de casos que van a tener una ejecución 
+distinta y se ejecutará el caso que coincida con el valor indicado en el switch, es importante considerar que esta sentencia
+no permite evaluar condiciones, únicamente valores exactos.
+
+//Se define una variable para controlar la condición del switch.
+int valor = 10;
+
+//Palabra reservada switch, dentro de los parentesis obligatorios la variable a evaluar.
+switch(valor){
+    //Palabra reservada "case" y la condición a evaluar.
+    case 0:
+        //Dentro del case, van las instrucciones de código a ejecutar.
+        System.out.println("El número que ingreso es 0");
+        //Palabra reservada break para romper el caso y salir del switch.
+        break;
+    case 5:
+        System.out.println("El número que ingreso es 5");
+        break;
+    //Palabra reservada default, para controlar los escenarios donde no coincida ningún "case".
+    default:
+        System.out.println("El número que ingreso es diferente de 5");
+        break;
+}
+    

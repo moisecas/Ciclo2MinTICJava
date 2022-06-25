@@ -1,0 +1,13 @@
+EJERCICIO #1:
+
+Crear una función que reciba dos números y devuelva las cuatro operaciones básicas con esos números, cabe destacar que
+los números pueden ir "quemados" en el código, no es necesario recibirlos desde un usuario.
+
+EJERCICIO #2:
+
+Cree una función que reciba un número ingresado por el usuario y lo multiplique por 5, luego, cree otra función que valide
+si el número resultante es mayor que 50 o menor que 50, por último, en una tercera función, imprima un mensaje de la 
+siguiente manera:
+"el numero resultante es" + numero_digitado + mensaje de la funcion 2, por ejemplo:
+
+Mensaje: El número digitado es: 60, es un número mayor a 50.

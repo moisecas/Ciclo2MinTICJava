@@ -1,0 +1,39 @@
+Funciones Java:
+
+Los programas largos son difíciles de organizar y de leer. Un programa completo tiene muchas líneas de código y tratar de 
+encontrar una parte específica puede llegar a ser complicado. En este sentido, se puede trabajar de forma modular. 
+En Java se pueden crear módulos que simplifican la tarea que estamos programando.
+Para ello, se emplea lo que se denomina programación descendente, que permite escribir cualquier programa como una 
+serie de tareas pequeñas y fáciles de manejar. En Java las funciones son la unidad básica para organizar el código de 
+forma descendente.
+
+- SINTAXIS:
+
+//Identificador de acceso: public, protected o private.
+//Palabra reservada static (si no la tiene, se tomaria como método, POO).
+//Palabra reservada void, opcional, en caso de retornar algo no se debe colocar.
+//nombre de la funcion en lowerCamelCase.
+//Parentesis obligatorios y parametros dentro si es que los requiere.
+public static void funcionDeEjemplo(parametros, si, los, requiere){
+    //instrucciones a ejecutar
+    int valor = 10;
+
+    //Palabra clave return para devolver el valor final (opcional), parentesis, un solo valor de retorno.
+    return(valor);
+}
+
+//Ejemplo de función que no retorna nada y sin parametros:
+public static void funcionSinRetorno(){
+    System.out.println("mensaje de una funcion sin retorno");
+}
+
+//Ejemplo de una funcion con parametros pero que no retorna nada:
+protected static void funcionConParametrosYsinRetorno(String palabra1, String palabra2){
+    System.out.println(palabra1 + palabra2);
+}
+
+//Ejemplo de una funcion con retorno:
+private static int funcionConRetorno(int numero1, int numero2){
+    int suma = numero1 + numero2;
+    return(suma);
+}

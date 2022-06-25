@@ -1,0 +1,64 @@
+Ciclos Java:
+
+En java se tienen principalmente tres tipos de ciclos, el while, do-while y el for, estas estructuras
+permiten crear una secuencia de instrucciones de código que se ejecuta repetidas veces, hasta
+que la condición asignada a dicho bucle deja de cumplirse. A continuación, se dará la
+sintaxis básica de los 3 bucles mencionados previamente.
+
+CICLO WHILE:
+* Permite, como su nombre indica, repetir una acción en un bucle siempre y cuando se cumpla una condición 
+booleana de control. Es posible que el código contenido en un bucle while no se ejecute, porque no se cumpla
+la condición.
+
+ - SINTAXIS: 
+
+//Se define una variable para controlar la condición dentro del while.
+int n = 0;
+
+//Palabra reservada while, parentesís obligatorios, dentro va la condición de ruptura, abre y cierra con llaves.
+while (n < 10) {
+    //Dentro del while van las instrucciones que se desean repetir.
+    //Para el ejemplo, una impresión sencilla de un mensaje por consola. 
+    System.out.println("Impresión dentro de un while, vuelta número " + n);
+
+    //Se debe incrementar la variable para evitar ciclos infinitos.
+    n = n + 1;
+}
+
+CICLO DO - WHILE:
+* La diferencia entre while y do-while es que en el while, la condición se evalúa antes de que se ejecute el
+código. En cambio, en un do-while primero se ejecuta una vez el código (sentencia "do") y, a después, se evalúa
+la condición. Si esta no se cumple,la ejecución del código sale del bucle.
+
+ - SINTAXIS: 
+
+//Se define una variable para controlar la condición dentro del while.
+int n = 1000;
+
+//Palabra reservada "do", abre y cierra llaves, dentro las instrucciones a iterar.
+do {
+    //Dentro del while van las instrucciones que se desean repetir.
+    //Para el ejemplo, una impresión sencilla de un mensaje por consola. 
+    System.out.println("Impresión dentro de un do-while, vuelta número " + n);
+
+    //Se debe incrementar la variable para evitar ciclos infinitos.
+    n = n + 1; // 1001
+}
+
+//Palabra reservada while, dentro la condición a evaluar, cierra con punto y coma ya que las instrucciones están
+//dentro del "do".
+ while(n < 10);
+
+ CICLO FOR:
+* El bucle for proporciona una forma concisa de escribir la estructura de bucle. A diferencia de un ciclo while,
+una sentencia for consume la inicialización, la condición y el incremento/decremento en una línea, 
+proporcionando así una estructura de bucle más corta y fácil de depurar.
+
+ - SINTAXIS: 
+
+//Palabra reservada for, dentro las 3 condiciones: punto de inicio; punto de salida; pasos o número de incrementos.
+for (int n = 0; n < 10; n++) {
+    //Dentro del for van las instrucciones que se desean repetir.
+    //Para el ejemplo, una impresión sencilla de un mensaje por consola. 
+    System.out.println("Impresión dentro de un for, vuelta número " + n);
+}
