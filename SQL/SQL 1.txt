@@ -1,0 +1,33 @@
+SQL 1 
+
+Inserinto: insertar datos. mundo es la bd city la tabla, lo que esta entre  () son los campos que voy a manipular y en values van los datos según el tipo de dato declarado para las columnas a intervenir
+
+insert into mundo.city (idcity, nombre, habitantes, pais, cantidad_barrios)
+values(1,"bucara","habitantes","pais",8);  
+
+CREATE DATABESE UDEA; 
+
+SHOW DATABASES
+
+CREATE TABLE udea.Alumno (
+	nombre char(20) NOT NULL,
+	apellido char(20) NOT NULL,
+	direccion char(200) NULL
+
+); 
+char es para letra y (numero), cantidad de caracteres 
+not null, no puede ser nulo, NOT accept NULL values. 
+NO puede haber nombres iguales de tablas o columnas dentro de la base de datos
+
+DROP TABLE udea.alumno; eliminar la tabla de la base de datos udea
+
+SELECT * FROM udea.alumno1; muestro la tabla alumno 1 de la base de datos udea
+
+ALTERAR COLUMNAS DE UNA BASE DE DATOS
+ALTER TABLE udea.alumno1 DROP COLUMN direccion; 
+
+
+
+
+
+
