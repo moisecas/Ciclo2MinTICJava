@@ -7,13 +7,18 @@ public class Solution {
     public static Object [] reporte(ArrayList <Cliente> tienda){
         Object [] reportes = new Object[5]; //array de object [promedio, nombre cliente menos pago, total pagado mas bajo, cliente que mas pago, total pagado mas alto]
         double promedio = 0; //promedio de los pagos de los clientes se inicia en 0 debido a que sumaremos los pagos de los clientes y luego dividiremos por la cantidad de clientes
-        double menorPago = 0; //menor pago de los clientes se inicia en 0 para que no se pueda comparar con un valor que no existe
-        double mayorPago = 0; //mayor pago de los clientes se inicia en 0 debido a que guardara el pago de un cliente que llegue
-        String nombreClienteMenorPago = ""; //nombre del cliente con menor pago se inicia en vacio pues se llenará con el nomb
+        double menorPago = tienda.get(0).getTotalAPagar(); //el menor pago inicia en el primer pago de la tienda
+        double mayorPago = tienda.get(0).getTotalAPagar(); //el mayor pago inicia en el primer pago de la tienda
         
-        String nombreClienteMasPago = ""; //nombre del cliente con mas pago se inicia en vacio pues se llenará con el nomb
-        int totalPagoMasBajo = 0; //total pagado mas bajo se inicia en 0 debido a que guardara el pago de un cliente que llegue
-        int totalPagoMasAlto = 0; //total pagado mas alto se inicia en 0 debido a que guardara el pago de un cliente que llegue
+        String nombreClienteMenorPago = tienda.get(0).getNombreCompleto(); //el nombre del cliente menos pago inicia en el nombre del primer cliente
+        
+        String nombreClienteMasPago = tienda.get(0).getNombreCompleto(); //el nombre del cliente que mas pago inicia en el nombre del primer cliente
+
+
+
+        int totalPagoMasBajo = Integer .MAX_VALUE; //el total pagado mas bajo inicia en el valor maximo de int
+        int totalPagoMasAlto =  Integer .MIN_VALUE; //el total pagado mas alto inicia en el valor minimo de int
+
         for (int i = 0; i < tienda.size(); i++) { //recorre el array de clientes
             promedio += tienda.get(i).getTotalAPagar(); //suma el total pagado de cada cliente
             if (tienda.get(i).getTotalAPagar() < menorPago) { //si el total pagado de un cliente es menor al menor pago
