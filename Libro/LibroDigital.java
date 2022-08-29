@@ -31,6 +31,10 @@ public class LibroDigital extends Libro {
         numPrestamos ++;
         setPrestamos(numPrestamos);
         
+        
+
+        
+        
       
 
         

@@ -1,6 +1,9 @@
 package Libro;
 
 import java.util.ArrayList;
+import java.util.List; 
+
+
 public class Solucion {
     //ESTA CLASE NO TIENE MAIN
     
@@ -13,7 +16,6 @@ public class Solucion {
         
         int mayorPaginas = 0;
         int menorPrestamos = 0;
-        int mayorTransferencia = 0;
         double mayorTransferenciaDatos = 0;
         String nombreLibroMayorPaginas = "";
         String nombreLibroMenorPrestamos = "";
@@ -28,23 +30,24 @@ public class Solucion {
                 menorPrestamos = library.get(i).getPrestamos();
                 nombreLibroMenorPrestamos = library.get(i).getTitulo();
             }
-            if (library.get(i).getTransferenciaDatos() > mayorTransferenciaDatos) {
-                mayorTransferenciaDatos = library.get(i).getTransferenciaDatos();
+            if (library.get(i).getDatosTransferidos() > mayorTransferenciaDatos) {
+                mayorTransferenciaDatos = library.get(i).getDatosTransferidos();
                 nombreLibroMayorTransferencia = library.get(i).getTitulo();
             } 
-
+                      
             
-
-
-
-        
-
-
-
-
-        
-        
-        
+                   
     }
+        Object[] reporte = new Object[6];
+        reporte[0] = nombreLibroMayorPaginas;
+        reporte[1] = mayorPaginas;
+        reporte[2] = nombreLibroMenorPrestamos;
+        reporte[3] = menorPrestamos;
+        reporte[4] = nombreLibroMayorTransferencia;
+        reporte[5] = mayorTransferenciaDatos;
+        return reporte;
+    }
+
+    
     
 }
