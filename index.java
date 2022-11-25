@@ -47,7 +47,9 @@ public class index {
         System.out.println(i + j); //imprimir suma de enteros
         System.out.println(i + j + " "+ usuario); //imprimir suma de enteros y concatenación de cadenas
         System.out.println(usuario + i + j); //imprimir concatenación de cadenas y suma de enteros
+        System.out.println(usuario + (i + j)); //imprimir concatenación de cadenas y suma de enteros con parentesis priorizando el resultado
         
+
 
 
     }
