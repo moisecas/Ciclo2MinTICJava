@@ -11,6 +11,9 @@ public class tipochar {
 
         char simbolo = '!';
         System.out.println("simbolo = " + simbolo);
+
+        int letra = 'a';
+        System.out.println("letra = " + letra); //imprime el valor decimal de la letra a
         
     }
 }
