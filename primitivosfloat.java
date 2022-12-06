@@ -9,6 +9,10 @@ public class primitivosfloat {
         System.out.println("maximo Float = " + Float.MAX_VALUE);    
         //error excedio float
         //float f = 3.4028235E38F; //error de compilación por que el valor 3.4028235E38F no cabe en un float
+        double numeroDouble = 10; 
+        System.out.println("numeroDouble = " + numeroDouble);
+        System.out.println("minimo Double = " + Double.MIN_VALUE);
+        System.out.println("maximo Double = " + Double.MAX_VALUE);
     }
 
     
