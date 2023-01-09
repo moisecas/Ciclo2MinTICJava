@@ -17,10 +17,24 @@ public class conversiones {
             //pedir un valor por consola de tipo string y convertirlo a int para sumarlo
             
             System.out.println("Proporcione el valor de radio: ");
-            Scanner consola = new Scanner(System.in);
+            //recibimos por consola y convertimos a int
+            Scanner consola = new Scanner(System.in); //se crea un objeto de tipo Scanner
             var radio = Double.parseDouble(consola.nextLine()); //conversion de String a double
             var area = Math.PI * Math.pow(radio, 2);
             System.out.println("area = " + area);
+
+            //de int a String
+            var edadTres = 10;
+            var edadTresString = String.valueOf(edadTres); //conversion de int a String
+            System.out.println("edad = " + edadTresString); //valor de edad en string 
+
+            var caracter = "hola".charAt(0); //se obtiene el caracter en la posicion 0, según lo que especifica el parentesis
+            System.out.println("car = " + caracter);
+
+            System.out.println("Proporcione un caracter: ");
+            caracter = consola.nextLine().charAt(0); //se obtiene el caracter en la posicion 0, según lo que especifica el parentesis
+            System.out.println("car = " + caracter);
+
 
             
 
