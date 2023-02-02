@@ -14,6 +14,8 @@ public class pruebametodo {
         int resultado = metodo2.sumardos(); //llama al método sumardos y guarda el valor retornado en la variable resultado
         System.out.println("El resultado de la suma es: " + resultado); //imprime el valor de la variable resultado
 
+        int resultado2 = metodo2.sumarTres(4, 7); //llama al método sumarTres y guarda el valor retornado en la variable resultado2
+        System.out.println("El resultado de la suma es: " + resultado2); //imprime el valor de la variable resultado2
         
     }
 }
