@@ -1,8 +1,8 @@
 package clasesObjetos;
 
 public class persona {
-    String nombre; 
-    String apellido;
+    public String nombre; //public para que sea accesible desde cualquier clase
+    public String apellido;
 
     public void desplegarInformacion() { //public para que sea accesible desde cualquier clase
         
