@@ -1,3 +1,4 @@
+package inicio;
 public class shorts {
     public static void main(String[] args) {
         short numeroShort = 32767; //16 bits

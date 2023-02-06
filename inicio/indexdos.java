@@ -1,3 +1,4 @@
+package inicio;
 public class indexdos {
     public static void main (String args []){
         var nombre = "moiso";

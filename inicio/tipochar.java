@@ -1,3 +1,4 @@
+package inicio;
 public class tipochar {
     public static void main (String[] args){
         char micaracter = 'a';

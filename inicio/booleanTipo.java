@@ -1,3 +1,5 @@
+package inicio;
+
 public class booleanTipo {
     public static void main (String[] args){
         //declaración de variables

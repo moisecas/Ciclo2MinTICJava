@@ -1,3 +1,4 @@
+package inicio;
 public class operadores {
     public static void main (String[] args){
         var a = 3;

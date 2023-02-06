@@ -1,3 +1,4 @@
+package inicio;
 public class ejercicio {
     public static void main (String args[]){
         var resultado = (3>2) ? "verdadero" : "falso"; //si 3 es mayor a 2, resultado sera verdadero, si no sera falso

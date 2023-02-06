@@ -1,3 +1,4 @@
+package inicio;
 public class intlong {
     public static void main(String[] args){
         //tipos primitivos enteros (byte, short, int, long)

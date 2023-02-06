@@ -1,3 +1,4 @@
+package inicio;
 public class primitivosfloat {
     public static void main (String[] args){
         //tipos primitivos de punto flotante (float, double)

@@ -1,3 +1,4 @@
+package inicio;
 public class vvar {
     public static void main (String[] args){
         var numeroEntero = 10;
